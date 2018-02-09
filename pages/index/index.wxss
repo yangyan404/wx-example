@@ -1,0 +1,36 @@
+/**index.wxss**/
+.msg-box{
+  padding: 20px
+}
+.input{
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px
+}
+.send-box{
+  display: flex
+}
+.place-input{
+  color: #ff6600; 
+}
+.list-view{
+  margin: 20px 0 0 0;
+}
+.msg-info{
+  display: block;
+  margin: 10px 0 0 0;
+  color: #339999
+}
+.item{
+  border-bottom: 1px dashed #ccc;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden
+}
+.text1{
+  float: left
+}
+.close-btn{
+  float: right;
+  margin-top: 5px
+}

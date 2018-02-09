@@ -1,0 +1,18 @@
+<view class='msg-box'>
+  <view class='send-box'>
+  <!-- 留言区域  -->
+    <input type='text' class='input' bindinput='changeInputVal' 
+    placeholder-class="place-input" value='{{inputVal}}' placeholder='请留言'></input>
+    <button size='mini' type='primary' bindtap='addmsg'>添加</button>
+  </view>
+  <!-- msgData里面没有数据才显示  -->
+  <text class='msg-info' wx:if="{{msgData.length==0}}">暂无留言。O(∩_∩)O哈哈~</text>
+<!-- 留言列表  -->
+  <view class='list-view'>
+    <view class='item' wx:for="{{msgData}}" wx:key="{{index}}">
+      <text class='text1'>{{item.msg}}</text>
+       <!-- <button class='close-btn' size='mini' type="defult">删除</button>  -->
+       <icon class='close-btn' data-index="{{index}}" type="cancel" bindtap='delmsg'></icon> 
+    </view>
+  </view>
+</view>
